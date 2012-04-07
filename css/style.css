@@ -217,7 +217,7 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
-
+html, body, #main, #cont, .bg, .outer{height: 100%; width: 100%;}
 
 
 
@@ -239,7 +239,7 @@ td { vertical-align: top; }
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 600px) {
   /* Style adjustments for viewports that meet the condition */
 }
 

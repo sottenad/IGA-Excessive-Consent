@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<root>
+	<!--Intro-->
+	<slide>
+		<image>1.png</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>img2.jpg</image>
+		<background>bg1.jpg</background>
+		<hand>hand1.jpg</hand>
+	</slide>
+	<!--Scenario 1-->
+	<slide>
+		<image>img3.jpg</image>
+		<background>bg1.jpg</background>
+		<hand>hand1.jpg</hand>
+	</slide>
+	<slide>
+		<image>img4.jpg</image>
+		<background>bg1.jpg</background>
+		<hand>hand1.jpg</hand>
+	</slide>
+	
+	
+</root>
