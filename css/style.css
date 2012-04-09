@@ -217,14 +217,16 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
+body{background:#222}
 html, body, #main, #cont, .bg, .outer{height: 100%; width: 100%;}
+
 
 /*Holder centering handled via JS*/
 .holder{height:557px; width:583px; position: absolute;}
 .holder img{position: absolute; top:78px; left:266px;}
 
 
-
+.bg{background-position: center center}
 
 
 

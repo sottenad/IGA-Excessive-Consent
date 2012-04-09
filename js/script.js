@@ -4,6 +4,9 @@
 var slideData;
 var currentSlide;
 var dataArr;
+var bgRef;
+var holderRef;
+var slideRef;
 
 $(function(){
 
@@ -26,7 +29,6 @@ $(function(){
 	
 	$('.holder img').live('click', function(){
 		currentSlide +1 >= dataArr.length ? currentSlide = 0 : currentSlide++;
-
 		makeMarkup(currentSlide);	
 	})
 	
@@ -65,6 +67,10 @@ function processSlides(data){
 	$('#cont').html(output);
 	
 	
+	bgRef = $('.bg');
+	holderRef = $('.holder');
+	slideRef = $('.holder img');
+	
 	preload(imageArr);
 	preload(bgArr);
 	preload(handArr);
@@ -93,12 +99,12 @@ function makeMarkup(index){
 	var image = $(item).find('image').text();
 	var background = $(item).find('background').text();
 	var hand = $(item).find('hand').text();
-	
+	console.log(background);
 	
 	/*alter markup*/
-	$('.outer .bg').css({'background':'url(img/bg/'+background});
-	$('.outer .holder').css({'background': 'background:url(img/hand/'+hand+') top left'});
-	$('.holder img').attr('src', 'img/screens/'+image );
+	$('.bg').css('background','url(img/bg/'+background+')');
+	$(holderRef).css('background', 'url(img/hand/'+hand+') top left');
+	$(slideRef).attr('src', 'img/screens/'+image );
 }
 
 
