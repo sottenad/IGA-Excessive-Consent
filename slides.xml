@@ -1,27 +1,194 @@
 <?xml version="1.0"?>
 <root>
 	<!--Intro-->
+	<!--Start Text from Wife-->
 	<slide>
 		<image>1.png</image>
+		<image>1_1.jpg</image>
 		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
 	<slide>
 		<image>2.png</image>
 		<background>2.jpg</background>
+		<image>1_2.jpg</image>
+		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
 	<!--Scenario 1-->
 	<slide>
 		<image>3.png</image>
 		<background>3.jpg</background>
+		<image>1_3.jpg</image>
+		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
 	<slide>
 		<image>4.png</image>
 		<background>4.jpg</background>
+		<image>1_4.jpg</image>
+		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
+	<slide>
+		<image>1_5.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>1_6.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>1_7.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<!--End Text from Wife-->
 	
 	
+	<!--Start Fabirkam-->
+	<slide>
+		<image>2_1.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_2.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_3.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_4.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_5.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_6.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<slide>
+		<image>2_7.jpg</image>
+		<background>1.jpg</background>
+		<hand>1.png</hand>
+	</slide>
+	<!--End Fabrikam-->
+	
+	
+	<!--Start Blue Yonder-->
+	<slide>
+		<image>3_1.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_2.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_3.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_4.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_5.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_6.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_7.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_8.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<slide>
+		<image>3_9.jpg</image>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
+	</slide>
+	<!--End Blue Yonder-->
+	
+	<!--Start Consolidated Mess-->
+	<slide>
+		<image>4_1.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_2.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_3.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_4.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_5.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_6.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_7.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_8.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+	<slide>
+		<image>4_9.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_10.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_11.jpg</image>
+		<background>7.jpg</background>
+		<background>7.jpg</background>
+<!--End A. Datum-->	
 </root>

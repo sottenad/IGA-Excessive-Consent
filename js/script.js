@@ -83,6 +83,8 @@ function centerDevice(){
 		$(holder).css({
 		   left: ($(window).width() - $(holder).outerWidth())/2,
 		   top:  ($(window).height() - $(holder).outerHeight())/2
+		   left: ($(window).width() - $(holder).outerWidth())/1.8,
+		   top:  ($(window).height() - $(holder).outerHeight())
 		});
 	 }
 }
