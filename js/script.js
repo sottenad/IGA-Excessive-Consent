@@ -81,8 +81,6 @@ function centerDevice(){
 	if($(window).width() >700){
 		var holder = $('.holder');
 		$(holder).css({
-		   left: ($(window).width() - $(holder).outerWidth())/2,
-		   top:  ($(window).height() - $(holder).outerHeight())/2
 		   left: ($(window).width() - $(holder).outerWidth())/1.8,
 		   top:  ($(window).height() - $(holder).outerHeight())
 		});

@@ -1,31 +1,22 @@
 <?xml version="1.0"?>
 <root>
-	<!--Intro-->
 	<!--Start Text from Wife-->
 	<slide>
-		<image>1.png</image>
 		<image>1_1.jpg</image>
 		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
 	<slide>
-		<image>2.png</image>
-		<background>2.jpg</background>
 		<image>1_2.jpg</image>
 		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
-	<!--Scenario 1-->
 	<slide>
-		<image>3.png</image>
-		<background>3.jpg</background>
 		<image>1_3.jpg</image>
 		<background>1.jpg</background>
 		<hand>1.png</hand>
 	</slide>
 	<slide>
-		<image>4.png</image>
-		<background>4.jpg</background>
 		<image>1_4.jpg</image>
 		<background>1.jpg</background>
 		<hand>1.png</hand>
@@ -188,7 +179,258 @@
 	</slide>
     <slide>
 		<image>4_11.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_12.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_13.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_14.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_15.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+    <slide>
+		<image>4_16.jpg</image>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
+	</slide>
+<!--End Consolidated Mess-->
+
+
+<!--Start Contoso-->
+	<slide>
+		<image>5_1.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_2.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_3.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_4.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_5.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_6.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_7.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_8.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+	<slide>
+		<image>5_9.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+    <slide>
+		<image>5_10.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+    <slide>
+		<image>5_11.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+    <slide>
+		<image>5_12.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+    <slide>
+		<image>5_13.jpg</image>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
+	</slide>
+<!--End Contoso-->
+
+<!--Start Margie's Travel-->
+	<slide>
+		<image>6_1.jpg</image>
+		<background>6a.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_2.jpg</image>
+		<background>6b.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_3.jpg</image>
+		<background>6b.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_4.jpg</image>
+		<background>6c.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_5.jpg</image>
+		<background>6c.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_6.jpg</image>
+		<background>6d.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_7.jpg</image>
+		<background>6d.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_8.jpg</image>
+		<background>6e.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+	<slide>
+		<image>6_9.jpg</image>
+		<background>6e.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_10.jpg</image>
+		<background>6f.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_11.jpg</image>
+		<background>6f.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_12.jpg</image>
+		<background>6g.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_13.jpg</image>
+		<background>6g.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_14.jpg</image>
+		<background>6h.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_15.jpg</image>
+		<background>6h.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_16.jpg</image>
+		<background>6i.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_17.jpg</image>
+		<background>6i.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_18.jpg</image>
+		<background>6j.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+    <slide>
+		<image>6_19.jpg</image>
+		<background>6j.jpg</background>
+		<hand>6.png</hand>
+	</slide>
+<!--End Margie's Travel-->
+
+<!--Start A. Datum-->
+	<slide>
+		<image>7_1.jpg</image>
 		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_2.jpg</image>
 		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_3.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_4.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_5.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_6.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_7.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_8.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+	<slide>
+		<image>7_9.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+    <slide>
+		<image>7_10.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
+    <slide>
+		<image>7_11.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+	</slide>
 <!--End A. Datum-->	
 </root>
