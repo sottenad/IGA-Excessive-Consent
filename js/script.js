@@ -7,18 +7,21 @@ var dataArr;
 var bgRef;
 var holderRef;
 var slideRef;
+var allowAdvance = true;
+
+/*Settings*/
+var pauseTime = 3000;
 
 $(function(){
 
 	$.ajax({
 		url: 'slides.xml',
-		crossDomain:true,
 		success: function(data){
 			var slideData = data;
 			processSlides(slideData);
 		},
 		error: function(jqXHR, textStatus, errorThrown){
-			console.log('Error:: ' + textStatus);
+			console.log('Error:: ' + textStatus + errorThrown);
 		}
 	})
 	
@@ -28,8 +31,10 @@ $(function(){
 	centerDevice();
 	
 	$('.holder img').live('click', function(){
-		currentSlide +1 >= dataArr.length ? currentSlide = 0 : currentSlide++;
-		makeMarkup(currentSlide);	
+		if(allowAdvance){
+			//We toggle the allowAdvance variable to false when we want to prevent manual slide advances.
+			advanceSlide();
+		}
 	})
 	
 })
@@ -66,7 +71,6 @@ function processSlides(data){
 	output += '</div></div></div>';	
 	$('#cont').html(output);
 	
-	
 	bgRef = $('.bg');
 	holderRef = $('.holder');
 	slideRef = $('.holder img');
@@ -99,14 +103,30 @@ function makeMarkup(index){
 	var image = $(item).find('image').text();
 	var background = $(item).find('background').text();
 	var hand = $(item).find('hand').text();
-	console.log(background);
+	var timer = $(item).find('istimer').text();
 	
 	/*alter markup*/
 	$('.bg').css('background','url(img/bg/'+background+')');
 	$(holderRef).css('background', 'url(img/hand/'+hand+') top left');
 	$(slideRef).attr('src', 'img/screens/'+image );
+	
+	//Always set this to true, and if it is a timer slide, we'll turn it off in processTimer();
+	allowAdvance = true;
+	processTimer(timer);
 }
 
+function processTimer(timer){
+	if(timer == 'true'){
+		allowAdvance = false;
+		//Run advFromTimer function after 3000 milseconds (defined above)
+		setTimeout(advanceSlide, pauseTime);
+	}
+}
+
+function advanceSlide(){
+	currentSlide +1 >= dataArr.length ? currentSlide = 0 : currentSlide++;
+	makeMarkup(currentSlide);	
+}
 
 
 
