@@ -37,6 +37,16 @@ $(function(){
 		}
 	})
 	
+	$(document).keydown(function(e){
+	    if (e.keyCode == 37) { 
+			//Left Key Pressed
+			previousSlide();
+	    }else if( e.keyCode == 39){
+	    	//right key pressed
+	    	advanceSlide();
+	    }
+	});
+	
 })
 
 $(window).load(function(){
@@ -127,6 +137,11 @@ function advanceSlide(){
 	currentSlide +1 >= dataArr.length ? currentSlide = 0 : currentSlide++;
 	makeMarkup(currentSlide);	
 }
+function previousSlide(){
+	currentSlide -1 <= 0 ? currentSlide = dataArr.length : currentSlide--;
+	makeMarkup(currentSlide);	
+}
+
 
 
 
