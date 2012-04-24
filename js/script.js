@@ -10,7 +10,7 @@ var slideRef;
 var allowAdvance = true;
 
 /*Settings*/
-var pauseTime = 3000;
+var pauseTime = 4000;
 
 $(function(){
 
