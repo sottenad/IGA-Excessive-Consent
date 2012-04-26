@@ -8,11 +8,19 @@ var bgRef;
 var holderRef;
 var slideRef;
 var allowAdvance = true;
+var timer;
 
 /*Settings*/
 var pauseTime = 4000;
 
+
+
 $(function(){
+
+
+	$(document).live('touchmove', function(e){
+		e.preventDefault(); 
+	})
 
 	$.ajax({
 		url: 'slides.xml',
@@ -25,11 +33,6 @@ $(function(){
 		}
 	})
 	
-	$(window).resize(function(){	
-		centerDevice();	
-	 });
-	centerDevice();
-	
 	$('.holder img').live('click', function(){
 		if(allowAdvance){
 			//We toggle the allowAdvance variable to false when we want to prevent manual slide advances.
@@ -38,19 +41,18 @@ $(function(){
 	})
 	
 	$(document).keydown(function(e){
+	
 	    if (e.keyCode == 37) { 
 			//Left Key Pressed
+			clearTimeout(timer);
 			previousSlide();
 	    }else if( e.keyCode == 39){
 	    	//right key pressed
+	    	clearTimeout(timer);
 	    	advanceSlide();
 	    }
 	});
 	
-})
-
-$(window).load(function(){
-	centerDevice();
 })
 
 function processSlides(data){
@@ -90,17 +92,6 @@ function processSlides(data){
 	preload(handArr);
 }
 
-/*Runs on window resize*/
-function centerDevice(){
-	if($(window).width() >700){
-		var holder = $('.holder');
-		$(holder).css({
-		   left: ($(window).width() - $(holder).outerWidth())/1.8,
-		   top:  ($(window).height() - $(holder).outerHeight())
-		});
-	 }
-}
-
 /*pass images to the preload function*/
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
@@ -113,7 +104,7 @@ function makeMarkup(index){
 	var image = $(item).find('image').text();
 	var background = $(item).find('background').text();
 	var hand = $(item).find('hand').text();
-	var timer = $(item).find('istimer').text();
+	var istimer = $(item).find('istimer').text();
 	
 	/*alter markup*/
 	$('.bg').css('background','url(img/bg/'+background+')');
@@ -122,14 +113,14 @@ function makeMarkup(index){
 	
 	//Always set this to true, and if it is a timer slide, we'll turn it off in processTimer();
 	allowAdvance = true;
-	processTimer(timer);
+	processTimer(istimer);
 }
 
-function processTimer(timer){
-	if(timer == 'true'){
+function processTimer(istimer){
+	if(istimer == 'true'){
 		allowAdvance = false;
-		//Run advFromTimer function after 3000 milseconds (defined above)
-		setTimeout(advanceSlide, pauseTime);
+		clearTimeout(timer);
+		timer = setTimeout(advanceSlide, pauseTime);
 	}
 }
 
@@ -142,6 +133,45 @@ function previousSlide(){
 	makeMarkup(currentSlide);	
 }
 
+
+/*
+  * Normalized hide address bar for iOS & Android
+  * (c) Scott Jehl, scottjehl.com
+  * MIT License
+*/
+(function( win ){
+	var doc = win.document;
+
+	// If there's a hash, or addEventListener is undefined, stop here
+	if( !location.hash && win.addEventListener ){
+
+		//scroll to 1
+		window.scrollTo( 0, 1 );
+		var scrollTop = 1,
+			getScrollTop = function(){
+				return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+			},
+
+			//reset to 0 on bodyready, if needed
+			bodycheck = setInterval(function(){
+				if( doc.body ){
+					clearInterval( bodycheck );
+					scrollTop = getScrollTop();
+					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				}	
+			}, 15 );
+
+		win.addEventListener( "load", function(){
+			setTimeout(function(){
+				//at load, if user hasn't scrolled more than 20 or so...
+				if( getScrollTop() < 20 ){
+					//reset to hide addr bar at onload
+					win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+				}
+			}, 0);
+		} );
+	}
+})( this );
 
 
 
