@@ -85,8 +85,8 @@
 	</slide>
 	<slide>
 		<image>3_slide.jpg</image>
-		<background>1.jpg</background>
-		<hand>1.png</hand>
+		<background>2.jpg</background>
+		<hand>2.png</hand>
 		<istimer>false</istimer>
 	</slide>
 	<!--End Fabrikam-->
@@ -149,8 +149,8 @@
 	</slide>
 	<slide>
 		<image>4_slide.jpg</image>
-		<background>2.jpg</background>
-		<hand>2.png</hand>
+		<background>3.jpg</background>
+		<hand>3.png</hand>
 		<istimer>false</istimer>
 	</slide>
 	<!--End Blue Yonder-->
@@ -254,8 +254,8 @@
 	</slide>
 	<slide>
 		<image>5_slide.jpg</image>
-		<background>3.jpg</background>
-		<hand>3.png</hand>
+		<background>4.jpg</background>
+		<hand>4.png</hand>
 		<istimer>false</istimer>
 	</slide>
 <!--End Consolidated Mess-->
@@ -341,12 +341,39 @@
 		<istimer>false</istimer>
 	</slide>
 	<slide>
-		<image>7_slide.jpg</image>
-		<background>4.jpg</background>
-		<hand>4.png</hand>
+		<image>6_slide.jpg</image>
+		<background>5.jpg</background>
+		<hand>5.png</hand>
 		<istimer>false</istimer>
 	</slide>
 <!--End Contoso-->
+
+<!--Start Text from Wife-->
+<slide>
+	<image>1_5.jpg</image>
+	<background>5.jpg</background>
+	<hand>5.png</hand>
+	<istimer>true</istimer>
+</slide>
+<slide>
+	<image>1_6.jpg</image>
+	<background>5.jpg</background>
+	<hand>5.png</hand>
+	<istimer>false</istimer>
+</slide>
+<slide>
+	<image>1_7.jpg</image>
+	<background>5.jpg</background>
+	<hand>5.png</hand>
+	<istimer>false</istimer>
+</slide>
+<slide>
+	<image>7_slide.jpg</image>
+	<background>6.jpg</background>
+	<hand>6.png</hand>
+	<istimer>false</istimer>
+</slide>
+<!--End Text from Wife-->
 
 <!--Start Margie's Travel-->
 	<slide>
@@ -465,8 +492,8 @@
 	</slide>
 	<slide>
 		<image>8_slide.jpg</image>
-		<background>6.jpg</background>
-		<hand>6.png</hand>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
 		<istimer>false</istimer>
 	</slide>
 <!--End Margie's Travel-->
@@ -539,4 +566,13 @@
 		<istimer>false</istimer>
 	</slide>
 <!--End A. Datum-->	
+
+<!--Start End Slide-->
+	<slide>
+		<image>9_slide.jpg</image>
+		<background>7.jpg</background>
+		<hand>7.png</hand>
+		<istimer>false</istimer>
+	</slide>
+<!--End End Slide-->
 </root>
