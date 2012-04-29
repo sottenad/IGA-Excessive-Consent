@@ -242,10 +242,9 @@ html, body, #main, #cont, .bg, .outer{height: 100%; width: 100%;}
    ========================================================================== */
 
 @media only screen and (max-width: 700px) {
-	html{height:100%; overflow: hidden; }
-  .bg, .holder{background: none!important; height: 100%; width:100%; top:0!important; left:0!important;  margin-left:0;}
-  .holder img{height:100%; width:100%; top:0; left:0;}
-   body {min-height: 480px;}
+	html, body, #main, #cont, .outer{height:108%; overflow: hidden; }
+  .bg, .holder{background: none!important; height: 118%; width:100%; top:0!important; left:0!important;  margin-left:0;}
+  .holder img{height:105% !important; width:100%; top:-6%; left:0; position: absolute;}
 }
 
 

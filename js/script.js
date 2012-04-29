@@ -129,9 +129,23 @@ function advanceSlide(){
 	makeMarkup(currentSlide);	
 }
 function previousSlide(){
-	currentSlide -1 <= 0 ? currentSlide = dataArr.length : currentSlide--;
+	currentSlide -1 <= 0 ? currentSlide = dataArr.length-1 : currentSlide--;
+	console.log(currentSlide	)
 	makeMarkup(currentSlide);	
 }
+
+
+window.addEventListener('orientationchange', function (evt) {
+    switch(window.orientation) {
+        case 0: // portrait
+        case 180: // portrait
+        case 90: // landscape
+        case -90: // landscape
+    }
+    //alert(window.orientation);
+    window.scrollTo( 0, 1 );
+}, false);
+
 
 
 /*
@@ -146,7 +160,7 @@ function previousSlide(){
 	if( !location.hash && win.addEventListener ){
 
 		//scroll to 1
-		window.scrollTo( 0, 1 );
+		
 		var scrollTop = 1,
 			getScrollTop = function(){
 				return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
