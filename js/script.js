@@ -17,6 +17,11 @@ var pauseTime = 4000;
 
 $(function(){
 
+	/*Detect iphones, we need to serve slightly different CSS to account for safari chrome*/
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+		$('body').addClass('iphone');
+	}
+
 
 	$(document).live('touchmove', function(e){
 		e.preventDefault(); 
