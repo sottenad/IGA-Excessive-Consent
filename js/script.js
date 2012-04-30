@@ -27,16 +27,9 @@ $(function(){
 		e.preventDefault(); 
 	})
 
-	$.ajax({
-		url: 'slides.xml',
-		success: function(data){
-			var slideData = data;
-			processSlides(slideData);
-		},
-		error: function(jqXHR, textStatus, errorThrown){
-			console.log('Error:: ' + textStatus + errorThrown);
-		}
-	})
+
+	processSlides(slideData);
+
 	
 	$('.holder img').live('click', function(){
 		if(allowAdvance){
@@ -61,14 +54,15 @@ $(function(){
 })
 
 function processSlides(data){
+
 	var imageArr = new Array();
 	var bgArr = new Array();
 	var handArr = new Array();
 	dataArr = new Array();
-	$(data).find('slide').each(function(i){	
-		var image = $(this).find('image').text();
-		var background = $(this).find('background').text();
-		var hand = $(this).find('hand').text();
+	$(data.slide).each(function(i){	
+		var image = this.image;
+		var background = this.background;
+		var hand = this.hand;
 		
 		imageArr.push('img/screens/'+image);
 		bgArr.push('img/bg/'+background);
@@ -78,9 +72,9 @@ function processSlides(data){
 	
 	currentSlide = 0;	
 	var item = dataArr[0];	
-	var image = $(item).find('image').text();
-	var background = $(item).find('background').text();
-	var hand = $(item).find('hand').text();
+	var image = item.image;
+	var background = item.background;
+	var hand = item.hand;
 	var output = '<div class="outer">';
 	output += '<div class="bg" style="background:url(img/bg/'+background+')">';	
 	output += '<div class="holder" style="background:url(img/hand/'+hand+') top left">';	
@@ -106,10 +100,10 @@ function preload(arrayOfImages) {
 
 function makeMarkup(index){
 	var item = dataArr[index];
-	var image = $(item).find('image').text();
-	var background = $(item).find('background').text();
-	var hand = $(item).find('hand').text();
-	var istimer = $(item).find('istimer').text();
+	var image = item.image;
+	var background = item.background;
+	var hand = item.hand;
+	var istimer = item.istimer;
 	
 	/*alter markup*/
 	$('.bg').css('background','url(img/bg/'+background+')');
@@ -135,7 +129,6 @@ function advanceSlide(){
 }
 function previousSlide(){
 	currentSlide -1 <= 0 ? currentSlide = dataArr.length-1 : currentSlide--;
-	console.log(currentSlide	)
 	makeMarkup(currentSlide);	
 }
 
